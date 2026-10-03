@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarih Dedektifi</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="ust-baslik">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        <line x1="15" y1="15" x2="21" y2="21" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      Tarih Dedektifi
+    </div>
+    <div class="ust-bilgi">
+      <span id="unvan" class="rozet">Çırak Tarihçi</span>
+      <span id="puan" class="puan">0 puan</span>
+      <button id="ses" class="ses" type="button" aria-label="Sesi aç ya da kapat" aria-pressed="false">🔊</button>
+    </div>
+  </header>
+
+  <main id="ekran" class="ekran"></main>
+  <canvas id="konfeti" class="konfeti" aria-hidden="true"></canvas>
+
+  <script src="lib/three.min.js"></script>
+  <script src="vakalar.js"></script>
+  <script src="sahneler.js"></script>
+  <script src="diorama.js"></script>
+  <script src="gorevler.js"></script>
+  <script src="oyun.js"></script>
+</body>
+</html>
